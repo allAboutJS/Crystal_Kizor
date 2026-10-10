@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-light: #FBFBF9;
+    --bg-white: #FFFFFF;
+    --bg-dark: #121212;
+    --bg-silver-black: #1A1A1A;
+    --brown-primary: #84533C;
+    --brown-light: #C28B6E;
+    --brown-btn-init: #A87152;
+    --border-light: #E5E1D8;
+    --border-dark: #2A2A2A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-light);
+    color: #141414;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-light);
+    color: #141414;
+    overflow-x: hidden;
+  }
+}
+
+/* Constrain container max width to elegant architectural monograph proportions */
+.container {
+  max-width: 72rem !important;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Continuous infinite right-to-left marquee ticker */
+@keyframes continuous-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-continuous {
+  display: flex;
+  width: max-content;
+  animation: continuous-marquee 32s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-continuous:hover {
+  animation-play-state: paused;
+}
