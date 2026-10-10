@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crystal Kizor — Stage 1 Assessment Submission</title>
+  <title>Victor Onah — Assessment Submission</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #FAFAF9;
-      --card-bg: #FFFFFF;
+      --bg: #FFFFFF;
       --text: #1C1917;
-      --muted: #57534E;
-      --subtle: #A8A29E;
+      --muted: #44403C;
+      --subtle: #78716C;
       --accent: #92400E;
-      --border: #E7E5E4;
+      --divider: #E7E5E4;
+      --link: #92400E;
     }
 
     * {
@@ -28,102 +28,78 @@
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-      padding: 3rem 1.5rem;
-      font-size: 14px;
+      line-height: 1.65;
+      padding: 3.5rem 1.5rem;
+      font-size: 14.5px;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 780px;
       margin: 0 auto;
     }
 
     header {
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 2rem;
+      border-bottom: 1.5px solid var(--text);
+      padding-bottom: 1.5rem;
       margin-bottom: 2.5rem;
-    }
-
-    .eyebrow {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--accent);
-      font-weight: 700;
-      margin-bottom: 0.5rem;
     }
 
     h1 {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       font-weight: 600;
-      line-height: 1.15;
+      line-height: 1.1;
       color: var(--text);
-      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
     }
 
     .meta-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-top: 1rem;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--subtle);
     }
 
-    .meta-item strong {
-      color: var(--text);
+    .meta-bar a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .section-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    .meta-bar a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .section-block {
+      margin-bottom: 3rem;
       page-break-inside: avoid;
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.75rem;
-      margin-bottom: 1.25rem;
     }
 
     h2 {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.6rem;
+      font-size: 1.85rem;
       color: var(--text);
       font-weight: 600;
-    }
-
-    .badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.2rem 0.6rem;
-      background: #FEF3C7;
-      color: var(--accent);
-      border: 1px solid #FDE68A;
-      border-radius: 2px;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--divider);
     }
 
     h3 {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
       color: var(--accent);
-      margin: 1.25rem 0 0.5rem;
+      margin: 1.5rem 0 0.5rem;
     }
 
     h3:first-of-type {
-      margin-top: 0;
+      margin-top: 0.75rem;
     }
 
     p {
@@ -141,45 +117,70 @@
     }
 
     li {
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.45rem;
     }
 
     li strong {
       color: var(--text);
     }
 
-    .callout {
-      background: #FFFBEB;
-      border-left: 3px solid var(--accent);
-      padding: 0.85rem 1rem;
-      margin: 1rem 0;
-      font-size: 0.85rem;
+    .live-link-box {
+      background: #F5F5F4;
+      padding: 0.9rem 1.1rem;
+      margin: 1rem 0 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .live-link-box a {
+      color: var(--link);
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .live-link-box a:hover {
+      text-decoration: underline;
+    }
+
+    .tech-pill {
+      font-size: 0.8rem;
+      color: var(--subtle);
+      font-weight: 500;
     }
 
     .footer {
       text-align: center;
       font-size: 0.8rem;
       color: var(--subtle);
-      margin-top: 3rem;
+      margin-top: 4rem;
       padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--divider);
     }
 
     @media print {
       body {
         background: #FFFFFF;
         padding: 0;
-        font-size: 12px;
+        font-size: 12.5px;
+        line-height: 1.55;
       }
       .container {
         max-width: 100%;
       }
-      .section-card {
-        box-shadow: none;
-        border: 1px solid #D6D3D1;
-        margin-bottom: 1.5rem;
-        padding: 1.25rem;
+      .section-block {
+        margin-bottom: 2rem;
         page-break-inside: avoid;
+      }
+      .live-link-box {
+        background: #F5F5F4 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        padding: 0.6rem 0.8rem;
       }
       .no-print {
         display: none !important;
@@ -198,7 +199,7 @@
       font-size: 0.85rem;
       font-weight: 600;
       cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
       transition: background 0.2s;
     }
 
@@ -210,20 +211,23 @@
 <body>
   <div class="container">
     <header>
-      <div class="eyebrow">Web Developer Assessment — Stage 1 Submission</div>
-      <h1>Crystal Kizor Brand Ecosystem</h1>
+      <h1>Victor Onah</h1>
       <div class="meta-bar">
-        <div class="meta-item"><strong>Candidate:</strong> Web Developer Assessment</div>
-        <div class="meta-item"><strong>Date:</strong> October 2026</div>
-        <div class="meta-item"><strong>Stack:</strong> React 19 • Tailwind CSS v4 • GSAP</div>
+        <a href="mailto:victoronah.dev@gmail.com">victoronah.dev@gmail.com</a>
+        <span>•</span>
+        <span>October 10, 2026</span>
       </div>
     </header>
 
-    <!-- Submission Note -->
-    <section class="section-card">
-      <div class="section-header">
-        <h2>Submission Note: Architecture & Technology Decisions</h2>
-        <span class="badge">168 / 200 Words</span>
+    <!-- Part 1 -->
+    <section class="section-block">
+      <h2>Part 1: Web Development & Architecture</h2>
+      <div class="live-link-box">
+        <div>
+          <strong>Live Deployed URL:</strong>
+          <a href="https://crystal-kizor-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">https://crystal-kizor-cyan.vercel.app/</a>
+        </div>
+        <div class="tech-pill">Stack: React 19 • TypeScript • Tailwind CSS v4 • GSAP</div>
       </div>
       <p>
         The Crystal Kizor platform brings seven distinct ventures—from architecture and furniture to media and youth movements—under one unified digital presence. Rather than presenting a disjointed list of businesses, the site is structured around her core philosophy: <strong>climate-responsive intelligence, human potential, and African context</strong>.
@@ -238,11 +242,8 @@
     </section>
 
     <!-- Part 2 -->
-    <section class="section-card">
-      <div class="section-header">
-        <h2>Part 2: AI Product Thinking — BuildIQ by TEA</h2>
-        <span class="badge">291 / 300 Words</span>
-      </div>
+    <section class="section-block">
+      <h2>Part 2: AI Product Thinking — BuildIQ by TEA</h2>
       <p>
         <strong>BuildIQ by TEA</strong> is an interactive mobile intelligence platform that deconstructs real-world African architectural projects into living, technical case studies. It is designed for African architecture graduates, students, and emerging practitioners seeking practical design and construction mastery.
       </p>
@@ -276,13 +277,10 @@
     </section>
 
     <!-- Part 3 -->
-    <section class="section-card">
-      <div class="section-header">
-        <h2>Part 3: Analytics & Improvement</h2>
-        <span class="badge">235 / 250 Words</span>
-      </div>
+    <section class="section-block">
+      <h2>Part 3: Analytics & Improvement</h2>
 
-      <h3>Part 3A: Measurement Framework (98 Words)</h3>
+      <h3>Part 3A: Measurement Framework</h3>
       <p>To measure website health, I track three metric layers:</p>
       <ol>
         <li><strong>Performance & Engagement:</strong> Page load speed and Core Web Vitals (PageSpeed), bounce rate, and time spent on page (Google Analytics 4).</li>
@@ -293,7 +291,7 @@
         <em>Iterative Improvement:</em> Re-order layouts so high-dwell sections appear earlier, rewrite content where reading time is abnormally low, and optimize heavy assets if mobile load speed lags.
       </p>
 
-      <h3>Part 3B: Scenario Investigation (5,000 Visitors, 5 Enquiries) (137 Words)</h3>
+      <h3>Part 3B: Scenario Investigation (5,000 Visitors, 5 Enquiries)</h3>
       <p>
         A 0.1% conversion rate (5/5,000) indicates problems extending beyond technical execution into marketing, sales positioning, and visual psychology:
       </p>
@@ -312,10 +310,6 @@
         <li>Redesign visual flow using directional imagery to guide attention to prominent, well-placed CTAs, while simplifying form fields to bare essentials.</li>
       </ol>
     </section>
-
-    <div class="footer">
-      Stage 1 Web Developer Assessment • Crystal Kizor Brand Platform • October 2026
-    </div>
   </div>
 
   <button class="print-button no-print" onclick="window.print()">Export to PDF (Print)</button>
